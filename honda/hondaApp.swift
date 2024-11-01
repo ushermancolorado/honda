@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct hondaApp: App {
+    func print(){
+        Swift.print("test234")
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

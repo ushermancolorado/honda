@@ -20,7 +20,7 @@ struct ContentView: View {
             
             Text("Hello, world!")
                 .fontWeight(.black).font(.callout)
-                .padding(40)
+                .font(.callout)
                 .fontWidth(.compressed)
                 .fontWeight(.bold)
                 .font(.largeTitle.bold().bold())
@@ -28,10 +28,17 @@ struct ContentView: View {
             Gauge(value: 0.1, in: /*@START_MENU_TOKEN@*/0...1/*@END_MENU_TOKEN@*/) {
                 Text("Labedddl")
             }
-            
+            .padding(10)
+            Rectangle()
         }
         .padding()
         .foregroundColor(.red)
+    }
+    
+    var footer: some View{
+        HStack{
+            Image(systemName: "4.circle")
+        }
     }
     
 }
