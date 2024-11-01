@@ -30,7 +30,6 @@ struct ContentView: View {
             }
             .padding(10)
             Rectangle()
-            Rectangle()
         }
         .padding()
         .foregroundColor(.red)
